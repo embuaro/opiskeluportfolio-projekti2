@@ -35,7 +35,8 @@ const Etusivu : React.FC<Props> = () : React.ReactElement => {
   }
 
   useEffect(() => {
-    if (!pyyntoLahetetty.current) {
+    
+   if (!pyyntoLahetetty.current) {
       haeData();
     }
       
@@ -47,7 +48,7 @@ const Etusivu : React.FC<Props> = () : React.ReactElement => {
   return (
     <>
     <img
-    src="/hero.png"
+    src={`${process.env.PUBLIC_URL}/hero.png`}
     alt="herokuva"
     style={{ width:"100%"}}
     />
